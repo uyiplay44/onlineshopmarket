@@ -1,0 +1,41 @@
+.logoslect {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.logosection {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 0;
+}
+.logosection h1 {
+  font-size: 20px;
+  font-weight: 200;
+}
+@media (min-width: 302px) and (max-width: 968px) {
+  .logoslect {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .logosection h1 {
+    font-size: 20px;
+    font-weight: 200;
+    padding: 100px 0;
+  }
+  .logosection img {
+    width: 100px;
+  }
+
+  .logosection {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 3fr);
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+  }
+}

@@ -1,0 +1,107 @@
+.NavContainer {
+  max-width: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+.NavLink {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.NavLogo img {
+  width: 100px;
+}
+.NavSection {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  min-width: 300px;
+}
+.Nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  gap: 5rem;
+  padding-left: 20px;
+  text-decoration: none;
+}
+.link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 15px;
+  text-decoration: none;
+  color: #999;
+  text-transform: uppercase;
+}
+.link2 {
+  text-decoration: none;
+  font-size: 15px;
+  text-decoration: none;
+  color: #999;
+  text-transform: uppercase;
+}
+.NavSec {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+.NavIco {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 2rem;
+}
+.cart {
+  cursor: pointer;
+  font-size: 20px;
+}
+.user {
+  font-size: 20px;
+  cursor: pointer;
+}
+.hamburgerMenu {
+  display: none;
+}
+
+@media screen and (min-width: 302px) and (max-width: 968px) {
+  .Nav {
+    position: fixed;
+    left: -100%;
+    top: 0;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #999;
+    width: 100%;
+    height: 100%;
+    transition: all 2s ease;
+  }
+  .Nav.active {
+    left: 0;
+  }
+  .NavSection {
+    display: none;
+  }
+  .hamburgerMenu {
+    display: flex;
+    color: #000;
+    left: 20px;
+    top: 20px;
+    z-index: 1;
+    font-size: 2rem;
+    cursor: pointer;
+    padding: 20px 0;
+  }
+  .link {
+    color: #fff;
+    font-size: 1.5rem;
+  }
+  .NavLogo img {
+    display: none;
+  }
+}
