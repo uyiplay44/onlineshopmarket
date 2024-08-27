@@ -10,7 +10,7 @@ export const SALES = [
     Img: photo1,
     title: "Men's Black Running",
     amount: 57.9,
-    oldprice: 669.9,
+    oldprice: 69.9,
   },
   {
     Img: photo2,

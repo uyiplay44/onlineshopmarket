@@ -88,3 +88,43 @@ a {
   opacity: 1;
   bottom: 10px;
 }
+@media (min-width: 768px) and (max-width: 1280px) {
+  .sell_main {
+    width: 60%;
+    height: 100%;
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(2, 2fr);
+    justify-content: center;
+    max-width: 100%;
+    margin: auto;
+    border-radius: 1px;
+    gap: 1.2rem;
+  }
+  .prod_img img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media (min-width: 302px) and (max-width: 768px) {
+  .sell__container {
+    width: 100%;
+    height: 100%;
+    /* padding-top: 50px; */
+  }
+  .sell_main {
+    max-width: 700px;
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+  }
+  .sell__header {
+    max-width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+}
